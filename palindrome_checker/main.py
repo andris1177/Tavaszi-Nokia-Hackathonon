@@ -3,22 +3,19 @@ from re import sub
 class PalindrómaTest:
     def __init__(self):
         self.fileLocation = "./input.txt"
-        self.data = []
+        self.lines = []
         self.regexPattern = r'[^a-z0-9]'
-        self.run()
 
     def readFile(self):
         with open(self.fileLocation, "r") as f:
             self.rawData = f.read()
         
-        self.data = self.rawData.lower().strip().split("\n")
+        self.lines = self.rawData.lower().strip().split("\n")
 
-        for i in range(len(self.data)):
-            self.data[i] = sub(self.regexPattern, "", self.data[i])
+        for i in range(len(self.lines)):
+            self.lines[i] = sub(self.regexPattern, "", self.lines[i])
 
-        f.close()
-
-    def testData(self, word):
+    def getPaleindromaInfo(self, word):
         self.wordRewersed = word[::-1]
         if word == self.wordRewersed:
             return f"YES, {self.uniqueCaracters(word)}"
@@ -28,13 +25,13 @@ class PalindrómaTest:
     def uniqueCaracters(self, word):
         return len(set(word))
 
-    def mainLoop(self):
-        for i in self.data:
-            print(self.testData(i))
+    def analizeRows(self):
+        for word in self.lines:
+            print(self.getPaleindromaInfo(word))
 
     def run(self):
         self.readFile()
-        self.mainLoop()
+        self.analizeRows()
  
-
 solution = PalindrómaTest()
+solution.run()
