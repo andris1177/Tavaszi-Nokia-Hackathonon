@@ -5,14 +5,14 @@ class PalindrómaTest:
         self.fileLocation = "./input.txt"
         #self.fileLocation = "teszt.txt"
         self.data = []
-        self.regexPattern = r'[^a-zA-Z0-9]'
+        self.regexPattern = r'[^a-z0-9]'
         self.run()
 
     def readFile(self):
         with open(self.fileLocation, "r") as f:
             self.rawData = f.read()
         
-        self.data = self.rawData.replace("\n", " ").lower().strip().split()
+        self.data = self.rawData.lower().split("\n")
 
         for i in range(len(self.data)):
             self.data[i] = sub(self.regexPattern, "", self.data[i])
@@ -31,7 +31,7 @@ class PalindrómaTest:
 
     def mainLoop(self):
         for i in self.data:
-            print(self.testData(i))
+            print(self.testData(i), i)
 
     def run(self):
         self.readFile()

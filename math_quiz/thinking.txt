@@ -41,3 +41,13 @@ C(c;6)
 T = 7 
 
 AB(3;4)
+
+6:
+
+7:
+
+8:
+mivel minden kis kocka az átlónál az egyik sarokból indulva mindig eggyel 
+jobbra és egyel feljebb lesz ezért az átlóba eső 1cm négyzetek területe 81, egy 
+1x1es négyzet terület 1 ezért 85 kis négyzet van kerezstbe ezért a nagy négyzet 85x85
+T = 85 * v85 = 7225 cm^2 
