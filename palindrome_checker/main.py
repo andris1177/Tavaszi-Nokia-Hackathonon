@@ -33,7 +33,6 @@ class PalindrómaTest:
             print(self.testData(i))
 
     def run(self):
-        print(self.data)
         self.readFile()
         self.mainLoop()
 
