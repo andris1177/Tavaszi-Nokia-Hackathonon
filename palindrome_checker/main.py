@@ -11,7 +11,7 @@ class PalindrómaTest:
         with open(self.fileLocation, "r") as f:
             self.rawData = f.read()
         
-        self.data = self.rawData.replace("\n", " ").strip().split()
+        self.data = self.rawData.replace("\n", " ").lower().strip().split()
 
         for i in range(len(self.data)):
             self.data[i] = sub(self.regexPattern, "", self.data[i])
@@ -20,7 +20,7 @@ class PalindrómaTest:
 
     def testData(self, word):
         self.wordRewersed = word[::-1]
-        if word.lower() == self.wordRewersed.lower():
+        if word == self.wordRewersed:
             return f"YES, {self.uniqueCaracters(word)}"
         else:
             return f"NO, -1"
