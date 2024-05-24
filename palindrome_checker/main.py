@@ -3,6 +3,7 @@ from re import sub
 class PalindrómaTest:
     def __init__(self):
         self.fileLocation = "./input.txt"
+        #self.fileLocation = "teszt.txt"
         self.data = []
         self.regexPattern = r'[^a-zA-Z0-9]'
         self.run()
