@@ -23,7 +23,7 @@ class PalindrómaTest:
         if word == self.wordRewersed:
             return f"YES, {self.uniqueCaracters(word)}"
         else:
-            return f"NO, -1"
+            return "NO, -1"
         
     def uniqueCaracters(self, word):
         return len(set(word))
