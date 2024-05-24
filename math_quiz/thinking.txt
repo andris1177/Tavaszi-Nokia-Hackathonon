@@ -20,6 +20,9 @@ A = 6*6^2 = 216 cm^2
 V = 8^3 = 512 cm^3
 A = 6*8^2 = 384 cm^2
 
+ha a 8cm széles marcipákocka mellé a 6 cm-es marcipánkockát teszem és annak 
+a tetejére a két 2cm es kockát akkor egy 8x13x2 cm-es marcipán marcipántéglát kapok aminek a térfoigata 
+
 3:
 
 4:
