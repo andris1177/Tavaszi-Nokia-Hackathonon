@@ -3,7 +3,6 @@ from re import sub
 class PalindrómaTest:
     def __init__(self):
         self.fileLocation = "./input.txt"
-        #self.fileLocation = "teszt.txt"
         self.data = []
         self.regexPattern = r'[^a-z0-9]'
         self.run()
@@ -12,7 +11,7 @@ class PalindrómaTest:
         with open(self.fileLocation, "r") as f:
             self.rawData = f.read()
         
-        self.data = self.rawData.lower().split("\n")
+        self.data = self.rawData.lower().strip().split("\n")
 
         for i in range(len(self.data)):
             self.data[i] = sub(self.regexPattern, "", self.data[i])
@@ -36,5 +35,6 @@ class PalindrómaTest:
     def run(self):
         self.readFile()
         self.mainLoop()
+ 
 
 solution = PalindrómaTest()
