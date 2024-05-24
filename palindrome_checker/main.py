@@ -21,9 +21,9 @@ class PalindrómaTest:
     def testData(self, word):
         self.wordRewersed = word[::-1]
         if word.lower() == self.wordRewersed.lower():
-            return f"YES,{self.uniqueCaracters(word)}"
+            return f"YES, {self.uniqueCaracters(word)}"
         else:
-            return f"NO,-1"
+            return f"NO, -1"
         
     def uniqueCaracters(self, word):
         return len(set(word))
