@@ -21,9 +21,25 @@ V = 8^3 = 512 cm^3
 A = 6*8^2 = 384 cm^2
 
 ha a 8cm széles marcipákocka mellé a 6 cm-es marcipánkockát teszem és annak 
-a tetejére a két 2cm es kockát akkor egy 8x13x2 cm-es marcipán marcipántéglát kapok aminek a térfoigata 
+a tetejére a két 2cm es kockát akkor egy 8x14x2 cm-es marcipán marcipántéglát kapok aminek a térfoigata 
 
 3:
+ha tudom hogy mind a kettő úgyan annyi idő allat teszi meg a távot 
+azaz a t nek egyenlőnek kell lennie.
+A távolságot két távra kell felosztani a gyalogos és a kerékpárosra, ami 
+Jancsinál:
+x/5+20-x/12
+
+Juliskánál:
+x/10+20-x/4
+
+ezeknek ugyanaz az eredménye mivel ugyanannyi idő alatt teszik meg ugyanazt a 
+távolságot ezért fel lehet írni egyenletként:
+x/5+20-x/12 = x/10+20-x/4 /*60
+6x+300-15x = 12x+100-5x
+-9x+300 = 7x+100 /+9x; -100
+200 = 16x /:16
+x = 12,5
 
 4:
 kör területe:
