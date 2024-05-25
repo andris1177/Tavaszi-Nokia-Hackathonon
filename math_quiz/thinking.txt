@@ -102,6 +102,7 @@ T = 7
 AB(3;4)
 
 6:
+ha a versenyzők száma n akkor n-1-en lőhetnek ugyanarra az emberre 
 
 7:
 
