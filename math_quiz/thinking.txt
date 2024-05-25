@@ -45,7 +45,12 @@ x = 12,5
 ha arra vagyok kíváncsi hol metszi a kör pereme lehet használni a kör eggyenletlét mivel ez 
 egy origó központú kör ezért a képlet x^2+y^2=r^2
 ha beleírom az adatokat akkor x^2+y^2=25
-az x helyére be tuk helyetesíten 1-5ig
+az x helyére be tuk helyetesíten 0-5ig
+
+0: 
+0^2+y^2 = 25
+y^2 = 25
+y = 5
 
 1:
 1^2+y^2 = 25
@@ -84,6 +89,8 @@ ezért a jó kordináták
 (-4;-3)
 (5;0)
 (-5;0)
+(0;5)
+(0;-5)
 
 5: 
 A(0;4)
