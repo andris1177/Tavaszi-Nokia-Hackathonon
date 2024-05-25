@@ -9,6 +9,10 @@ class MazeSolver:
        self.regexPatternRaw = r'^[A-Z]$'
        self.regexPattern = compile(self.regexPatternRaw)
 
+       self.empty = "."
+       self.block = "#"
+       self.goal = "G"
+
     def readFile(self):
         with open(self.fileLocation, 'r') as f:
             for line in f:
