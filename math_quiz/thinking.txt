@@ -42,15 +42,48 @@ x/5+20-x/12 = x/10+20-x/4 /*60
 x = 12,5
 
 4:
-kör területe:
-r = 5
-T = 5^2*pi = 25pi
+ha arra vagyok kíváncsi hol metszi a kör pereme lehet használni a kör eggyenletlét mivel ez 
+egy origó központú kör ezért a képlet x^2+y^2=r^2
+ha beleírom az adatokat akkor x^2+y^2=25
+az x helyére be tuk helyetesíten 1-5ig
 
-1x1-es négyzet területe:
-T = 1*1 = 1
+1:
+1^2+y^2 = 25
+y=24
+a gyöke nem egész szám ezért nem jó
 
-25pi/1 = 78.5398163397
-78.5398163397 darab kis kocka fér bele
+2:
+2^2+y^2 = 25
+y^ = 21
+a gyöke nem egész szám ezért nem jó
+
+3:
+3^2+y^2 = 25
+y^2 = 16
+y = 4
+
+4: 
+4^2+y^2 = 25
+y^2 = 9
+y = 3
+
+5: 
+5^2 + y^2 = 25
+y^2 = 0
+y = 0
+
+minden lehetséges pont négyszer van rajt a kör másik három 90 fokos részén is
+ezért a jó kordináták
+(3;4)
+(3;-4)
+(-3;4)
+(-3;-4)
+(4;3)
+(4;-3)
+(-4;3)
+(-4;-3)
+(5;0)
+(-5;0)
 
 5: 
 A(0;4)
