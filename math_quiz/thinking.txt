@@ -23,10 +23,6 @@ A = 6*8^2 = 384 cm^2
 ha a 8cm széles marcipákocka mellé a 6 cm-es marcipánkockát teszem és annak 
 a tetejére a két 2cm es kockát akkor egy 8x14x2 cm-es marcipán marcipántéglát kapok aminek a térfoigata 
 
-de ennél van egy jobb megoldás ha a 8 cm-es kockára ráteszem a 6cm es kockát 
-és a 6cm-es kockára a két 2cm-es kockát akkor ezeket levágva kaphatok egy 8cm-es kockát 
-v = 8^3 = 512
-
 3:
 ha tudom hogy mind a kettő úgyan annyi idő allat teszi meg a távot 
 azaz a t nek egyenlőnek kell lennie.
