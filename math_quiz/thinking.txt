@@ -1,4 +1,4 @@
-201:
+1:
 t = (20-5) = 15 s
 s = 300 m 
 v = 300/15 = 20 m/s
@@ -22,6 +22,12 @@ A = 6*8^2 = 384 cm^2
 
 ha a 8cm széles marcipákocka mellé a 6 cm-es marcipánkockát teszem és annak 
 a tetejére a két 2cm es kockát akkor egy 8x14x2 cm-es marcipán marcipántéglát kapok aminek a térfoigata 
+
+
+Én mág arra is gondoltam hogy a 8 cm-es kockára ráteszem a 6cm es kockát 
+és a 6cm-es kockára a két 2cm-es kockát akkor ezeket levágva kaphatok egy 8cm-es kockát 
+v = 8^3 = 512
+de ezt nem fogadta el az ellenőrző
 
 3:
 ha tudom hogy mind a kettő úgyan annyi idő allat teszi meg a távot 
@@ -97,7 +103,18 @@ A(0;4)
 B(3;0)
 C(c;6)
 
-T = 7 
+a c kordínátát nem tudom de azt tudom, hogy nagyobb mint 0 de kissebb mint hat, ha az egész számok halmazát nézem akkor az 1 és a 2 lehet 
+ezek után ki tudom számolni a pontok különbségét az sqrt((x1-x2)^2+(y1-y2)^2)-el és így megkaphatom a három oldal hosszát. ezek után kiszámolhatom a 
+cosinus tétellel a y szöget és ezek után a sinusos terület képlettel a területet, ha ct 1-nek vettem akkor a terület 5 viszont a 2 re jól jött ki a 7
+levezetés:
+A(0;4) B(3;0) C(2;6)
+|AB| = sqrt((3-0)^2+(0-4)^2) = 5
+|AC| = sqrt((2-0)^2+(6-4)^2) = 2*sqrt(2)
+|BC| = sqrt((2-3)^2+(6-0)^2) = sqrt(37)
+
+cos^-1y = ((sqrt(37))^2+(2*sqrt(2))^2-5^2)/2*sqrt(37)*(2*sqrt(2)) = 54,46
+
+t = (sqrt(37) * (2*sqrt(2)) * sin(54,46)) / 2 = 6,999 ami kerekítve 7
 
 AB(3;4)
 
