@@ -94,11 +94,12 @@ class MazeSolver:
 
     def run(self):
         self.readFile()
-        for mazeId in self.mazes.keys():
+        for i, mazeId in enumerate(self.mazes.keys()):
             self.findMazeEntryAndExit(self.mazes[mazeId])
             print(mazeId)
             print(self.convertCordinateToDirection(self.findPath(self.mazes[mazeId])))
-            print()
+            if i < len(self.mazes) - 1:
+                print()
 
 solution = MazeSolver()
 solution.run()
