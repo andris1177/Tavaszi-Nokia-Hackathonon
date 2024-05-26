@@ -55,7 +55,7 @@ class MazeSolver:
             if differenceX == 0 and differenceY == -1:
                 directions += "L "
 
-        directions + "G"
+        directions += "G"
 
         return directions
 
