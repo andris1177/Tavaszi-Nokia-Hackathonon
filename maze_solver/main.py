@@ -36,7 +36,7 @@ class MazeSolver:
     def convertCordinateToDirection(self, cordinates):
         # converting the cordinates into directions
 
-        directions = []
+        directions = "S "
 
         for cordinate in range(1, len(cordinates)):
 
@@ -44,16 +44,18 @@ class MazeSolver:
             differenceY = cordinates[cordinate][1] - cordinates[cordinate-1][1]
 
             if differenceX == 1 and differenceY == 0:
-                directions.append("D")
+                directions += "D "
 
             if differenceX == -1 and differenceY == 0:
-                directions.append("U")
+                directions += "U "
 
             if differenceX == 0 and differenceY == 1:
-                directions.append("R")
+                directions += "R "
 
             if differenceX == 0 and differenceY == -1:
-                directions.append("L")
+                directions += "L "
+
+        directions + "G"
 
         return directions
 
@@ -95,7 +97,7 @@ class MazeSolver:
         for mazeId in self.mazes.keys():
             self.findMazeEntryAndExit(self.mazes[mazeId])
             print(mazeId)
-            print(' '.join(self.convertCordinateToDirection(self.findPath(self.mazes[mazeId]))))
+            print(self.convertCordinateToDirection(self.findPath(self.mazes[mazeId])))
             print("\n")
 
 solution = MazeSolver()
