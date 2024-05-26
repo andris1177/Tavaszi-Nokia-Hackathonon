@@ -121,6 +121,9 @@ AB(3;4)
 6:
 
 7:
+ha legalább 21 golyót kell kihúzni ahoz, hogy legyen piros golyó akkor
+egy lehetséges opció, hogy 20 kék és zöld golyó között 1 piros van így összesen 10 
+piros golyó van 
 
 8:
 mivel minden kis kocka az átlónál az egyik sarokból indulva mindig eggyel 
