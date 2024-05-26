@@ -98,7 +98,7 @@ class MazeSolver:
             self.findMazeEntryAndExit(self.mazes[mazeId])
             print(mazeId)
             print(self.convertCordinateToDirection(self.findPath(self.mazes[mazeId])))
-            print("\n")
+            print()
 
 solution = MazeSolver()
 solution.run()
