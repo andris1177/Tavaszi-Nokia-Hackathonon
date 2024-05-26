@@ -21,7 +21,7 @@ V = 8^3 = 512 cm^3
 A = 6*8^2 = 384 cm^2
 
 ha a 8cm széles marcipákocka mellé a 6 cm-es marcipánkockát teszem és annak 
-a tetejére a két 2cm es kockát akkor egy 8x14x2 cm-es marcipán marcipántéglát kapok aminek a térfoigata 
+a tetejére a két 2cm es kockát akkor egy 8x14x2 cm-es marcipán marcipántéglát kapok aminek a térfoigata 320 cm**3
 
 
 Én mág arra is gondoltam hogy a 8 cm-es kockára ráteszem a 6cm es kockát 
@@ -116,17 +116,33 @@ cos^-1y = ((sqrt(37))^2+(2*sqrt(2))^2-5^2)/2*sqrt(37)*(2*sqrt(2)) = 54,46
 
 t = (sqrt(37) * (2*sqrt(2)) * sin(54,46)) / 2 = 6,999 ami kerekítve 7
 
-AB(3;4)
-
 6:
 
 7:
 ha legalább 21 golyót kell kihúzni ahoz, hogy legyen piros golyó akkor
-egy lehetséges opció, hogy 20 kék és zöld golyó között 1 piros van így összesen 10 
-piros golyó van 
+egy lehetséges opció, hogy 20 kék és zöld golyó között 1 piros ha ezt hozzáadom a maradék kilenc golyóhoz ami már csak piros lehet 
+akkor így összesen 10 piros golyó van 
 
 8:
 mivel minden kis kocka az átlónál az egyik sarokból indulva mindig eggyel 
-jobbra és egyel feljebb lesz ezért az átlóba eső 1cm négyzetek területe 81, egy 
-1x1es négyzet terület 1 ezért 85 kis négyzet van kerezstbe ezért a nagy négyzet 85x85
+jobbra és egyel feljebb lesz ezért az átlóba eső 1cm négyzetek területe 85, egy 
+1x1es négyzet terület 1 ezért 85 kis négyzet van keresztbe ezért a nagy négyzet 85x85
 T = 85 * v85 = 7225 cm^2 
+
+9: 
+az összes embert könnyen ki tudom számolni ha egy gráfként nézem tudom az összes élszámot és innen ki tudom
+számolni a csúcsok számát, és nem kell leosztani 2-vel mert oda vissza köszönnek egymásnak
+n*(n-1) = 198 + 308
+n*(n-1) = 506
+n^2 - n = 506 /-506
+ezt nullára rendezve
+n^2 -n - 506 = 0
+
+ezt másodfokú eggyenletként megoldva 
+1+-sqrt(1^2-4*1*(-506))
+n1 = 23
+n2 = -22 de ez negatív szóval hamis gyök
+
+innen tudom hogy egy angol 22 embertöl köszönt el szöval minden angol 22 embertő
+szóval n*22 = 198 /22
+n = 9
