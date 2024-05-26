@@ -1,4 +1,5 @@
-from re import compile, match 
+from re import compile
+import queue
 
 class MazeSolver:
     def __init__(self):
@@ -8,10 +9,6 @@ class MazeSolver:
        self.mazeId = None
        self.regexPatternRaw = r'^[A-Z]$'
        self.regexPattern = compile(self.regexPatternRaw)
-
-       self.empty = "."
-       self.block = "#"
-       self.goal = "G"
 
     def readFile(self):
         with open(self.fileLocation, 'r') as f:
@@ -36,7 +33,7 @@ class MazeSolver:
 
     def run(self):
         self.readFile()
-        print(self.mazes["A"])
+        print(self.mazes)
 
 solution = MazeSolver()
 solution.run()
