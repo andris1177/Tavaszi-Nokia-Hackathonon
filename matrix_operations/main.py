@@ -49,7 +49,7 @@ class MatrixOperation:
             resultList = result.tolist()
             print(" ".join(characters[i]))
             for j in range(len(resultList)):
-                print(result[i])
+                print(" ".join(map(str, result[j])))
             i+=1
             
 
