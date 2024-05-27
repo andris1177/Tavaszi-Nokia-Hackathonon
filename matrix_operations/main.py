@@ -46,8 +46,10 @@ class MatrixOperation:
             result = eval(operationForNumpy, {}, self.matrixes)
             resultList = result.tolist()
             print("".join(operation))
-            for j in range(len(resultList)):
-                print(" ".join(map(str, result[j])))
+            for j in result:
+                print(" ".join(map(str, j)))
+
+            print()
             
 
     def run(self):
