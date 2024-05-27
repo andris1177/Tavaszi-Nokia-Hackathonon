@@ -1,48 +1,62 @@
-from re import compile, match
+import numpy as np
 
-class MatrixOperations:
+class MatrixOperation:
     def __init__(self):
-        self.fileLocation = './input.txt'
+        self.fileLocation = "./input.txt"
         self.matrixes = {}
-        self.matrix = []
-        self.matrixId = None
-        self.regexPatternRaw = r'^[A-Z]$'
-        self.regexPattern = compile(self.regexPatternRaw)
-        self.matriciesOrSolution = 0
+        self.operations = []
 
     def readFile(self):
+        isInOperation = False
+        matrix = None
+
         with open(self.fileLocation, 'r') as f:
-            for line in f:
-                line = line.replace(" ", "").strip()
+            lines = f.readlines()
 
-                if line == "matrices" or self.matriciesOrSolution == 1:
-                    self.matriciesOrSolution = 1
+        for line in lines:
+            line = line.strip()
 
+            if not line:
+                continue
 
-                    if not line:
-                        continue
+            if line == "operations":
+                isInOperation = True
+                matrix = None
+                continue
 
-                    if self.regexPattern.match(line):
-                        if self.matrixId is not None:
-                            self.matrixes[self.matrixId] = self.matrix
+            if not isInOperation:
+                if len(line) > 0 and line[0] in "ABCDEFGHIJ" and len(line) == 1:
+                    matrix = line[0]
+                    self.matrixes[matrix] = []
 
-                        self.matrixId = line
-                        self.matrix = []
+                elif matrix:
+                    self.matrixes[matrix].append(list(map(int, line.split())))
 
-                    else:
-                        self.matrix.append(list(line))
+            else:
+                self.operations.append(line)
 
-                    if self.matrixId is not None:
-                        self.matrixes[self.matrixId] = self.matrix
+    def convertListToNpArray(self):
+        for i in self.matrixes:
+            self.matrixes[i] = np.array(self.matrixes[i])
 
-                else:
-                    return 
+    def calculate(self):
+        # clacluating the values
+        i = 0
+        characters = [["A"], ["B"], ["C"], ["D"], ["E"], ["F"], ["G"], ["H"], ["I"], ["J"]]
+        for operation in self.operations:
+            operation = operation.replace("*", "@")
+            result = eval(operation, {}, self.matrixes)
+            resultList = result.tolist()
+            print(" ".join(characters[i]))
+            for j in range(len(resultList)):
+                print(result[i])
+            i+=1
+            
 
     def run(self):
         self.readFile()
-        print(self.matrixes)
+        self.convertListToNpArray()
+        self.calculate()
 
-        
-
-solution = MatrixOperations()
+solution = MatrixOperation()
 solution.run()
