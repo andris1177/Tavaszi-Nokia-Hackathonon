@@ -41,16 +41,13 @@ class MatrixOperation:
 
     def calculate(self):
         # clacluating the values
-        i = 0
-        characters = [["A"], ["B"], ["C"], ["D"], ["E"], ["F"], ["G"], ["H"], ["I"], ["J"]]
         for operation in self.operations:
-            operation = operation.replace("*", "@")
-            result = eval(operation, {}, self.matrixes)
+            operationForNumpy = operation.replace("*", "@")
+            result = eval(operationForNumpy, {}, self.matrixes)
             resultList = result.tolist()
-            print(" ".join(characters[i]))
+            print("".join(operation))
             for j in range(len(resultList)):
                 print(" ".join(map(str, result[j])))
-            i+=1
             
 
     def run(self):
